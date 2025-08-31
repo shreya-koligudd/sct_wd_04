@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern To-Do App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <div class="header-top">
+        <h1>✔ To-Do Board</h1>
+      </div>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+    </header>
+
+    <div class="task-input">
+      <input type="text" id="task-input" placeholder="What do you need to do?">
+      <input type="datetime-local" id="task-date">
+      <select id="task-category">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Other">Other</option>
+      </select>
+      <button id="add-task">Add</button>
+    </div>
+
+    <div id="task-list" class="task-list"></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
